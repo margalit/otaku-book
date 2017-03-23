@@ -1,5 +1,4 @@
 ---
-title: Home
-layout: default
+title: For Morgy
+layout: home
 ---
-You’re all set

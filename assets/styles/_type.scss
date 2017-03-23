@@ -1,23 +1,42 @@
-$fontsize-1: 4.4rem;
-$fontsize-2: 3.2rem;
+@font-face {
+  font-family: 'Headline';
+  font-weight: normal;
+  src: url('/assets/fonts/TH-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Body';
+  font-weight: normal;
+  src: url('/assets/fonts/Uni-Regular.woff');
+}
+
+$fontsize-1: 6rem;
+$fontsize-2: 4rem;
 $fontsize-3: 2.2rem;
 
-$lineheight-1: 6.1rem;
-$lineheight-2: 4.6rem;
+$lineheight-1: 7rem;
+$lineheight-2: 6rem;
 $lineheight-3: 3.2rem;
 
 $classes: (
   f1: (
+    font-family: 'Headline',
     font-size: $fontsize-1,
-    line-height: $lineheight-2
+    line-height: $lineheight-2,
   ),
   f2: (
+    font-family: 'Headline',
     font-size: $fontsize-2,
-    line-height: $lineheight-2
+    line-height: $lineheight-2,
   ),
   f3: (
+    font-family: 'Body',
     font-size: $fontsize-3,
-    line-height: $lineheight-3
+    line-height: $lineheight-3,
+  ),
+  link: (
+    text-decoration: none,
+    border-bottom: 1px solid,
   ),
   bold: (font-weight: bold),
   center: (text-align: center),

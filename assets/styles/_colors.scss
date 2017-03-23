@@ -1,14 +1,23 @@
-$colors: ();
+$colors: (
+  "purple": #2a348c,
+  "gray": #f4f1f2,
+  "white": #ffffff,
+);
 
+@mixin classes($colors) {
+  @each $name, $value in $colors {
+    .#{$name} {
+      color: $value;
+    }
+    .bg-#{$name} {
+      background-color: $value;
+    }
+  }
+}
+
+@include classes($colors);
 @each $bp-prefix, $size in $breakpoints {
   @media #{$size} {
-    @each $name, $value in $colors {
-      .#{"" + $name} {
-        color: $value;
-      }
-      .bg-#{"" + $name} {
-        background-color: $value;
-      }
-    }
+    @include classes($colors);
   }
 }

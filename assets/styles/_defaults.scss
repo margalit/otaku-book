@@ -40,6 +40,7 @@ button {
   background: transparent;
   font: inherit;
   cursor: pointer;
+  color: inherit;
 
   &:focus {
     outline: 0;
@@ -51,4 +52,13 @@ input, textarea {
   font-size: inherit;
   display: block;
   width: 100%;
+  color: inherit;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
 }

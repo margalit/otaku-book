@@ -2,12 +2,15 @@ $classes: (
   input: (
     padding: nth($spacings, 2),
     font-size: $fontsize-3,
-    line-height: $lineheight-3
+    line-height: $lineheight-3,
+    border: 1px solid,
   ),
   textarea: (
     padding: nth($spacings, 2),
     font-size: $fontsize-3,
-    line-height: $lineheight-3
+    line-height: $lineheight-3,
+    min-height: nth($spacings, 6),
+    -webkit-appearance: none
   ),
 );
 

@@ -1,5 +1,10 @@
 $classes: (
-  button: (),
+  button: (
+    font-size: $fontsize-3,
+    line-height: $fontsize-3,
+    padding: (nth($spacings, 2) * 1.2) nth($spacings, 3) nth($spacings, 2),
+    border: 1px solid,
+  ),
 );
 
 @include all-sizes($classes);
